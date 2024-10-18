@@ -1,0 +1,11 @@
+.background{
+	position:absolute;
+	top:0;
+	left: 0;
+	width:80%;
+	min-height: 10vh;
+	background-image: url("../image/photo1.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: blur(5px);
+}

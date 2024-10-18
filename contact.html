@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us::MY E-Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("image/photo1.jpg");
+        }
+        .footer{bottom: 0px;background:rgba(0,1,0,0.7);color: white;font-size: 28px;font-family: comic sans ms}
+        a{text-decoration: none;
+            color: white}
+        header {
+            background:rgba(0,0,0,0.7);
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <u><h1>Contact Us MY E-Library</h1></u>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <br><br><br><br>
+    <footer class="footer">
+            <ul>
+                <li><img src="image/home.png" width="30" height="25"><a href="home.html">Home</a></li>
+                <li><img src="image/contact-us.png" width="30" height="25"><a href="home.html"><a href="contact.html">Contact Us</a></li>
+                <li><img src="image/info.png" width="30" height="25"><a href="home.html"><a href="about.html">About Us</a></li>
+                <center><p>&copy; 2023 E-Library. All rights reserved.</p></center>
+            </ul>
+        
+    </footer>
+</body>
+</html>
