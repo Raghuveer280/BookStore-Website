@@ -1,89 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>E-Library::Login</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url("image/photo2.jpg");
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .login-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .footer{border-radius: 5px; background:grey;color: white;font-size: 28px;font-family: comic sans ms}
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #4caf50;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-        .footer a{
-            text-decoration: none;
-            color: black;
-            margin: 10px;
-        }
-        .image{border-radius: 5px}
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Book Haven</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>MyE-Library Login</h2>
-        <form id="studentForm">
-            <label for="studentUsername">Student Username:</label>
-            <input type="text" id="studentUsername" name="studentUsername" required>
+    <header>
+        <h1>Login to Book Haven</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
 
-            <label for="studentPassword">Password:</label>
-            <input type="password" id="studentPassword" name="studentPassword" required>
+    <div class="main-container">
+        <aside class="categories">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="catalogueCSE.html">CSE</a></li>
+                <li><a href="catalogueECE.html">ECE</a></li>
+                <li><a href="catalogueEEE.html">EEE</a></li>
+                <li><a href="catalogueCIVIL.html">CIVIL</a></li>
 
-            <button type="button">Student Login</button>
-        </form>
-        <br>
-        <form id="adminForm">
-            <label for="adminUsername">Administrator Username:</label>
-            <input type="text" id="adminUsername" name="adminUsername" required>
+            </ul>
+        </aside>
 
-            <label for="adminPassword">Password:</label>
-            <input type="password" id="adminPassword" name="adminPassword" required>
+        <main>
+            <h2>Login to Your Account</h2>
+            <form action="login" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <button type="button">Administrator Login</button>
-        </form>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </main>
     </div>
-    <div class="footer">
-<footer>
-    <img src="image/photo3.jpg" width="700" height="250">
-    <table width="100%" height="50"><tr>
-           <td align="center">
-                <br><img class="image" src="image/home.png" width="30" height="25"><a href="home.html">Home</a>
-                <br><img src="image/contact-us.png" width="30" height="25"><a href="home.html"><a href="contact.html">Contact Us</a>
-                <br><img src="image/info.png" width="30" height="25"><a href="home.html"><a href="about.html">About Us</a>
-        </td></tr>
-        </table>
-        <center><font color="white">Copyright ©2023-2024 My E-library. All rights reserved.</font></center>
+
+    <footer>
+        <p>&copy; 2024 Book Haven. All Rights Reserved.</p>
     </footer>
-</div>
 </body>
 </html>
